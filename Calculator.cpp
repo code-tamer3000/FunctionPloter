@@ -102,7 +102,6 @@ double Calculator::execOp(std::string op, double val1, double val2) {
   } else if (op == "*") {
     return val1 * val2;
   } else if (op == "/") {
-		if (val2 == 0) throw std::invalid_argument("zero division!");
     return val1 / val2;
   } else if (op == "-u") {
     return -val1;
